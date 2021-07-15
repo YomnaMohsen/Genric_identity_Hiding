@@ -1,3 +1,14 @@
-It conatins opnet modeler process models impleamente in the following paper:
+It conatins opnet modeler (17) modified process models, which were impleamented in the following paper:
   "GPSIH: A Generic IP-Based Scheme For Identity Hiding In Manets."
   The publishing link:https://ieeexplore.ieee.org/document/7036717
+  
+  The modified process models are located in manet station node mode, the original process model named arp.
+  First process model is modifed arp process model, which encrypt ip address with symmetric cipher (DES).
+  Second process model is modifed arp process model, which simulates impersonation attack doen by manet station.
+  
+  
+  Instructions to use opnet modeler:
+  1)You must have visual studio commpiler.
+  2)You must set your enviroment variables, according to windows version you had.
+  3)You must specify transmission range in your pipeline file.
+  
