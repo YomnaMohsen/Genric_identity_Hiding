@@ -280,7 +280,7 @@ class ip_arp_v4_malc_state
 		Prohandle	              		ipv6_nd_prohandle                               ;	/* Process handle of the ipv6_nd process. */
 		IpT_Interface_Info *	   		alt_intf_ptr                                    ;	/* A dummy interface that contains all ALT VLAN addresses as        */
 		                        		                                                	/* sub-interfaces. Valid only on a dual MSFC running in dual router */
-		                        		                                                	/* mode.                                                            */
+		 //Done By me                       		                                                	/* mode.                                                            */
 		OpT_uInt32	             		spoofed                                         ;
 		Boolean	                		malci                                           ;
 		Stathandle	             		global_pkt_drop                                 ;
@@ -332,6 +332,7 @@ VosT_Obtype ip_arp_v4_malc_state::obtype = (VosT_Obtype)OPC_NIL;
 #define hsrp_info_ptr           		op_sv_ptr->hsrp_info_ptr
 #define ipv6_nd_prohandle       		op_sv_ptr->ipv6_nd_prohandle
 #define alt_intf_ptr            		op_sv_ptr->alt_intf_ptr
+
 #define spoofed                 		op_sv_ptr->spoofed
 #define malci                   		op_sv_ptr->malci
 #define global_pkt_drop         		op_sv_ptr->global_pkt_drop
@@ -2565,6 +2566,8 @@ arp_ip_packet_from_mac_handle (Packet* pkptr, int subintf_index)
 	Ici*					ip_iciptr;
 	Ipv6T_Nd_Invoke_Info	ipv6_nd_invoke_info;
 	const IpT_Dgram_Fields*	ip_dgram_fd_ptr;
+	
+	//Done by me
 	IpT_Dgram_Fields*	ip_dgram_fd_ptr_temp;//new
 	Objid my_node_objid,my_objid;//new
 
@@ -2572,7 +2575,7 @@ arp_ip_packet_from_mac_handle (Packet* pkptr, int subintf_index)
 	
 	my_node_objid = op_topo_parent (my_objid);//new
 	
-	
+	////////////////////////////////////////////////////////////////////////////////
 	
 	/** An IP packet has been received from the MAC layer	**/
 	/** If it is an IPv6 ICMP Packet, forward it to the		**/
@@ -2599,7 +2602,7 @@ arp_ip_packet_from_mac_handle (Packet* pkptr, int subintf_index)
 
 	/* Access the IP header of the packet.					*/
 	ip_dgram_fd_ptr = ip_dgram_fields_access_read_only (pkptr);
-	
+	//Done by me
 	op_pk_nfd_access(pkptr, "fields", &ip_dgram_fd_ptr_temp);//new
 	
 	//cout<<"address"<<ip_dgram_fd_ptr_temp->src_addr.address.ipv4_addr<<"\n";
@@ -2623,7 +2626,7 @@ arp_ip_packet_from_mac_handle (Packet* pkptr, int subintf_index)
 			
 				}
 	
-		
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
 	//cout<<"dest in mac"<<ip_dgram_fd_ptr_temp->dest_addr.address.ipv4_addr<<"\n";
 	/* Check if IPv6 is enabled on this interface. First,	*/
 	/* make sure that the packet is an IP datagram, since	*/
@@ -2948,7 +2951,7 @@ ip_arp_intf_lower_layer_type_set (IpT_Interface_Info* intf_ptr, OpT_Int64 lower_
 
 	FOUT;
 	}
-
+//Done by me
 bool check_range(unsigned int value)
 {
 	char  mask[32];
@@ -3034,7 +3037,7 @@ static void pkt_drop()
 	FOUT;
 	
 	}
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* End of Function Block */
 
 /* Undefine optional tracing in FIN/FOUT/FRET */
