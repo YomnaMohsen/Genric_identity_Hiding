@@ -42,7 +42,7 @@ using namespace std;
 
 ////////////////////////////////////////////////////////////////////////////////
 
-
+//Done by me
 
 // msg sent from head
 #define     key     2     
@@ -60,7 +60,7 @@ typedef struct ManetT_Flow_Info
 	} ManetT_Flow_Info;
 
 
-
+//Done by me
 // def for handling msgs
  struct msg_info
 	{
@@ -553,6 +553,8 @@ manet_rpg_packet_destroy (Packet*	pkptr)//new
 	
 	FOUT;
 	}
+	
+//Done by me
 void packet_destroy (Packet*	pkptr)//new 
 	{
 
@@ -587,8 +589,9 @@ void packet_destroy (Packet*	pkptr)//new
 	
 	FOUT;
 	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+//Done by me
 	 void get_keys(unsigned char arr[])// if node is member
 	{
 	
@@ -626,7 +629,7 @@ void packet_destroy (Packet*	pkptr)//new
 	
 	
 	}
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* End of Function Block */
 
 /* Undefine optional tracing in FIN/FOUT/FRET */
