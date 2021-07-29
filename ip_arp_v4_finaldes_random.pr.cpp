@@ -155,7 +155,7 @@ typedef struct
 #define	ARP_SIM_EFF_USED		"Enabled"
 static bool check_range(unsigned int val);
  
-
+//Done by me
  
 // des def
 static int l[32],r[32],keys[16][48],pt[64]={0},t[64],cipher[64],temp1[32],temp2[32];
@@ -173,8 +173,9 @@ static int acc=0;
 
 /////////////////////////////////////////////////////////////////////////////////
 
-
+//Done by me
 static unsigned int random();
+
 
 //des  fn
 
@@ -191,7 +192,7 @@ void decrypt(unsigned int &c,unsigned int &d,Prg_List * list);
 void copy(int dest[],Prg_List * list);
 //bool get_list();
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /***** Function Prototypes *****/
 
@@ -3136,7 +3137,8 @@ ip_arp_intf_lower_layer_type_set (IpT_Interface_Info* intf_ptr, OpT_Int64 lower_
 
 	FOUT;
 	}
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Done by me
 // des functions
 
 static void sbox(int row,int col,int i,int p[],int loc)
@@ -3593,7 +3595,7 @@ static void pkt_drop()
 	FOUT;
 	
 	}
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* End of Function Block */
 
