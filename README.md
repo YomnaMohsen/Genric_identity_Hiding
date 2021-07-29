@@ -1,10 +1,10 @@
-It conatins opnet modeler (17) modified process models, which were impleamented in the following paper:
+It conatins opnet modeler version 17, modified process models, which were implemented in the following paper:
   "GPSIH: A Generic IP-Based Scheme For Identity Hiding In Manets."
-  The publishing link:https://ieeexplore.ieee.org/document/7036717
+  The paper available on: https://ieeexplore.ieee.org/document/7036717
   
-  The modified process models are located in manet station node mode, the original process model named arp.
-  First process model is modifed arp process model, which encrypt ip address with symmetric cipher (DES).
-  Second process model is modifed arp process model, which simulates impersonation attack doen by manet station.
+  The modified process models are located in manet station node model, the original process model named arp.
+  First process model is modifed arp process model, which encrypts ip address with symmetric cipher (DES).
+  Second process model is modifed arp process model, which simulates impersonation attack done by manet station.
   
   
   Instructions to use opnet modeler:
