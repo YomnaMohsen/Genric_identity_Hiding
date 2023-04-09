@@ -8,7 +8,7 @@ It conatins opnet modeler version 17, modified process models, which were implem
   
   
   Instructions to use opnet modeler:
-  1)You must have visual studio commpiler.
+  1)You must have visual studio compiler.
   2)You must set your enviroment variables, according to windows version you had.
   3)You must specify transmission range in your pipeline file.
   
